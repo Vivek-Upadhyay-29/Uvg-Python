@@ -8,4 +8,5 @@ def func():
   finally:
    print("I am always right")
 x = func()
+
 print(x)
