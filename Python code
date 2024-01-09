@@ -1,14 +1,11 @@
+def TowerOfHanoi(n , source, destination, auxiliary):
+	if n==1:
+		print ("Move disk 1 from source",source,"to destination",destination)
+		return
+	TowerOfHanoi(n-1, source, auxiliary, destination)
+	print ("Move disk",n,"from source",source,"to destination",destination)
+	TowerOfHanoi(n-1, auxiliary, destination, source)
+		
+n = 4
+TowerOfHanoi(n,'A','B','C') 
 
-
-def isPalindrome(s):
-	return s == s[::-1]
-
-
-# Driver code
-s = "malayalam"
-ans = isPalindrome(s)
-
-if ans:
-	print("Yes")
-else:
-	print("No")
