@@ -8,6 +8,6 @@ def TowerOfHanoi(n , source, destination, auxiliary):
 	print ("Move disk",n,"from source",source,"to destination",destination)
 	TowerOfHanoi(n-1, auxiliary, destination, source)
 		
+
 n = 4
 TowerOfHanoi(n,'A','B','C') 
-
