@@ -1,14 +1,18 @@
-import time
-t = time.strftime('%H:%M:%S')
-hour = int(time.strftime('%H'))
-print(hour)
 
+num = int (input (“Enter any number to test whether it is odd or even: “)
 
-if(hour>0  and  hour<12):
- print("Good Morning")
-elif(hour>12 and hour< 17):
- print("Good Evening")
-if(hour>17 and hour<0):
- print("Good Night")
-    
-    
+if (num % 2) == 0:
+
+              print (“The number is even”)
+
+else:
+
+              print (“The provided number is odd”)
+
+Output:
+
+Enter any number to test whether it is odd or even:
+
+887
+
+887 is odd.
